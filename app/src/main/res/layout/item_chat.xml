@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="#FFFFFF"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+       <FrameLayout
+           android:layout_width="56dp"
+           android:layout_height="56dp">
+           <com.google.android.material.imageview.ShapeableImageView
+               android:layout_width="56dp"
+               android:id="@+id/iv_profile"
+               android:src="@drawable/img_5"
+               android:scaleType="centerCrop"
+               app:shapeAppearanceOverlay="@style/circle"
+               android:adjustViewBounds="true"
+               android:layout_height="56dp"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:gravity="bottom|end"
+               android:layout_height="match_parent"
+               android:background="#40EAE2E2">
+              <ImageView
+                  android:id="@+id/iv_online"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_online"/>
+
+           </LinearLayout>
+       </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_fulname"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Azamat"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:text="4:23 PM"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="apk_debug.apk"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".6dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
